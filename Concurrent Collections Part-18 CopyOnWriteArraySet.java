@@ -36,3 +36,35 @@
 	
   > Iterator  of CopyOnWriteArraySet can perform only Read operation and won't perform remove operation. otherwise 
 	we will get Runtime Exception UnsupportedOperationException.
+
+
+													
+ Constructors 
+
+ 
+	CopyOnWriteArraySet s  = new CopyOnWriteArraySet();
+	
+	CopyOnWriteArraySet s  = new CopyOnWriteArraySet(Collectio c );
+	
+
+	import java.util.Concurrent.*;
+	class Test
+	{
+		public static void main(String args[])
+		{
+			CopyOnWriteArraySet s = new CopyOnWriteArraySet();
+			l.add("D");
+			l.add("B");
+			l.add("C");
+			l.add("A");
+			l.add(null);
+			l.add(10);
+			l.add("D");
+			System.out.println(s);
+		}
+	} 
+	output
+	
+	D, B, C, A, null,10
+			
+			
