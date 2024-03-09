@@ -40,5 +40,17 @@
  -> Iterator of ArrayList can perform remove operation but Iterator of CopyOnWriteArrayList can't peforme remove operation
     Otherwise we will get Runtime Exception saying UnsupportedOperationException.
 	
-	
+	ArrayList
+		
+		
+		Iterator itr = 	l.iterator();
+		while (itr.hasNext())
+		{
+			Integer I = (Integer)itr.next();
+			if(I%2==0)
+			{
+				itr.remove();
+			}
+		}
+									
 	
